@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer:	Gergely Kontra <kgergely@mcl.hu>
-" Last Change:	2002. 04. 09.
+" Last Change:	2002. 07. 03.
 " Based on scite colors.
 " I've changed my mind, and inverted the colors.
 " After an hour, this is the result.
@@ -20,25 +20,63 @@ let g:colors_name = "cool"
 
 
 " GUI
-highlight Normal	guifg=#80A0C0	guibg=#223344
-highlight Search	guifg=#ffffff	guibg=#335577
-highlight IncSearch	guifg=#000000	guibg=#ffff00	gui=NONE
-highlight Visual	guifg=#112233	guibg=#6688AA
-highlight Folded	guifg=#000000	guibg=#999999
-highlight Cursor	guifg=#999999	guibg=#FFFFFF
-highlight Special	guifg=#80FF80	guibg=#333300	gui=bold
-highlight Comment	guifg=#808080	guibg=#444444
-highlight StatusLine	guifg=#FFFFFF	guibg=#553333
-highlight StatusLineNC	guifg=#AA8888	guibg=#000000
-highlight Statement	guifg=#FF8080			gui=bold
-highlight Type		guifg=#FFFFff   gui=NONE
-highlight Function	guifg=#FF8080	gui=bold
-highlight LineNr	guifg=#FFFFFF	guibg=#444444
-highlight FoldColumn	guifg=#FFFFFF	guibg=#222222
-highlight Define	guifg=#FFFF80	guibg=#000099 gui=bold
-highlight Number	guifg=#FFFFFF	guibg=#302030
-highlight Subtitle	guifg=#FFFFFF	guibg=#994444 gui=bold,underline
-highlight String	guifg=#80FF80	guibg=#004444
-highlight Delimiter	guifg=#FFFFFF	guibg=#221F22	gui=bold
-highlight PreProc	guifg=#ffff00	guibg=#000000	gui=bold
+"highlight Normal	guifg=#77BBFF	guibg=#304060
+highlight Normal	guifg=#77BBFF	guibg=#102040
+highlight Normal	ctermfg=LightBlue	ctermbg=Black
 
+highlight Comment	guifg=#EEEEEE	guibg=#393939
+highlight Comment	ctermfg=white	ctermbg=DarkGrey
+
+highlight Constant	gui=underline
+highlight Constant	ctermfg=LightBlue cterm=bold,underline
+
+highlight Cursor	guifg=#999999	guibg=#FFFFFF
+
+highlight Define	guifg=#FFFF80	guibg=#000099 gui=bold
+highlight Define	ctermfg=Yellow	ctermbg=DarkBlue cterm=bold
+
+highlight Delimiter	guifg=#FFFFFF	guibg=#221F22	gui=bold
+
+highlight FoldColumn	guifg=#FFFFFF	guibg=#222222
+highlight FoldColumn	ctermfg=White	ctermbg=DarkGrey cterm=reverse
+
+highlight Folded	guifg=#000000	guibg=#999999
+highlight Folded	ctermfg=DarkGrey	ctermbg=Black	cterm=reverse
+
+highlight Function	guifg=#dddddd	guibg=#000099 gui=bold
+highlight Function	ctermfg=White	ctermbg=DarkBlue cterm=bold
+
+highlight IncSearch	guifg=#000000	guibg=#ffffff	gui=bold,underline
+
+highlight LineNr	guifg=#FFFFFF	guibg=#444444
+
+highlight Number	guifg=#dddddd	gui=bold
+highlight Number	ctermfg=LightCyan
+
+highlight PreProc	guibg=#000000	guifg=#77bbff gui=bold
+
+highlight Search	guifg=#ffffff	guibg=#335577
+highlight Search	ctermfg=White ctermbg=Cyan cterm=reverse
+
+highlight Special	guifg=#ccaa55	guibg=#102040 gui=none
+highlight Special	ctermfg=Brown	ctermbg=Black	cterm=bold
+
+highlight Statement	guifg=#FF8080			gui=bold
+highlight Statement	ctermfg=Magenta			cterm=bold
+
+highlight StatusLine	guifg=#FFFFFF	guibg=#553333
+highlight StatusLine	ctermfg=white	ctermbg=DarkRed
+
+highlight StatusLineNC	guifg=#AA8888	guibg=#000000
+highlight StatusLineNC	ctermfg=red	ctermbg=black
+
+highlight String	guifg=#99ffaa guibg=#000000
+highlight String	ctermfg=White
+
+highlight Subtitle	guifg=#FFFFFF	guibg=#994444 gui=bold,underline
+
+highlight Type		guifg=#FFFFFF   gui=NONE
+highlight Type		guifg=white   gui=NONE
+
+highlight Visual	guibg=#112233	guifg=#6688AA
+highlight Visual	ctermbg=DarkBlue	ctermfg=LightBlue
